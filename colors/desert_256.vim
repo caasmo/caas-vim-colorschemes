@@ -50,7 +50,7 @@ hi TabLine         term=underline cterm=underline ctermbg=248
 hi TabLineSel      term=bold cterm=bold 
 hi TabLineFill     term=reverse cterm=reverse 
 hi CursorColumn    term=reverse ctermbg=241 
-hi CursorLine      term=underline ctermbg=241 
+hi CursorLine      cterm=none ctermbg=241 
 hi ColorColumn     term=reverse ctermbg=88 
 hi Cursor          ctermfg=66 ctermbg=222 
 hi lCursor         ctermfg=236 ctermbg=231 
