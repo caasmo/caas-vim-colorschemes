@@ -10,7 +10,7 @@ if version > 580
     endif
 endif
 
-let g:colors_name="eclipse_256"
+let g:colors_name="peachpuff_256"
 hi SpecialKey      term=bold ctermfg=21 
 hi NonText         term=bold cterm=bold ctermfg=21 
 hi Directory       term=bold ctermfg=21 
