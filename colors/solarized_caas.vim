@@ -138,7 +138,15 @@ exe "hi ColorColumn"    . s:fg_none   .s:bg_base2  .s:fmt_none
 exe "hi Conceal"        . s:fg_blue   .s:bg_none   .s:fmt_none
 exe "hi CursorColumn"   . s:fg_none   .s:bg_base2  .s:fmt_none
 exe "hi CursorLine"     . s:fg_none   .s:bg_base2  .s:fmt_none
-exe "hi Cursor"         . s:fg_none   .s:bg_none   .s:fmt_revr
+
+augroup CursorLineInst
+    au!
+    autocmd InsertEnter * exe "hi CursorLine"     . s:fg_none   .s:bg_base2  .s:fmt_bold
+    autocmd InsertLeave * exe "hi CursorLine"     . s:fg_none   .s:bg_base2  .s:fmt_none
+augroup END
+
+exe "hi CursorLineNr"   . s:fg_red    .s:bg_base2  .s:fmt_none
+exe "hi Cursor"         . s:fg_red  .s:bg_none   .s:fmt_revr
 exe "hi DiffAdd"        . s:fg_green  .s:bg_none   .s:fmt_revr
 exe "hi DiffChange"     . s:fg_yellow .s:bg_none   .s:fmt_revr
 exe "hi DiffDelete"     . s:fg_red    .s:bg_none   .s:fmt_revr
@@ -177,6 +185,8 @@ exe "hi VisualNOS"      . s:fg_none   .s:bg_base02 .s:fmt_stnd
 exe "hi Visual"         . s:fg_none   .s:bg_base02 .s:fmt_stnd
 exe "hi WarningMsg"     . s:fg_red    .s:bg_none   .s:fmt_bold
 exe "hi WildMenu"       . s:fg_base1  .s:bg_base02 .s:fmt_none
+
+
 
 
 ""hi Boolean         ctermfg=67 
