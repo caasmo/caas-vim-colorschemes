@@ -9,10 +9,10 @@ endif
 let colors_name = "solarized_caas"
 
 let s:c_back        = "233"
-let s:c_base03      = "233"
-let s:c_base02      = "234"
-let s:c_base01      = "239"
 let s:c_base00      = "240"
+let s:c_base01      = "239"
+let s:c_base02      = "234"
+let s:c_base03      = "233"
 let s:c_base0       = "244"
 let s:c_base1       = "245"
 let s:c_base2       = "254"
@@ -84,9 +84,9 @@ exe "hi Number"         . s:fg_red    .s:bg_none
 "       Boolean         a boolean constant: TRUE, false
 "       Float           a floating point constant: 2.3e10
 
-exe "hi String"         . s:fg_cyan .s:bg_none   .s:fmt_none
+exe "hi String"         . s:fg_green .s:bg_none   .s:fmt_none
 
-exe "hi Identifier"     . s:fg_blue   .s:bg_none   .s:fmt_none
+exe "hi Identifier"     . s:fg_base02   .s:bg_none   .s:fmt_none
 "      *Identifier      any variable name
 "       Function        function name (also: methods for classes)
 "
@@ -166,8 +166,8 @@ exe "hi SpellBad"       . s:fg_none   .s:bg_none   .s:fmt_curl
 exe "hi SpellCap"       . s:fg_none   .s:bg_none   .s:fmt_curl   
 exe "hi SpellLocal"     . s:fg_none   .s:bg_none   .s:fmt_curl   
 exe "hi SpellRare"      . s:fg_none   .s:bg_none   .s:fmt_curl   
-exe "hi StatusLineNC"   . s:fg_base1  .s:bg_base02 .s:fmt_none
-exe "hi StatusLine"     . s:fg_base0  .s:bg_base2 .s:fmt_none
+exe "hi StatusLineNC"   . s:fg_base1  .s:bg_base2 .s:fmt_none
+exe "hi StatusLine"     . s:fg_base01  .s:bg_base3 .s:fmt_revr
 exe "hi TabLineFill"    . s:fg_base0  .s:bg_base02 .s:fmt_undr   
 exe "hi TabLineSel"     . s:fg_base2  .s:bg_base01 .s:fmt_undr   
 exe "hi TabLine"        . s:fg_base0  .s:bg_base02 .s:fmt_undr   
